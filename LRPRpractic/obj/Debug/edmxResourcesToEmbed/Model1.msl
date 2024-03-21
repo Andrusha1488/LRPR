@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище BurgerPlaceModelContainer" CdmEntityContainer="BurgerPlaceEntities3">
+    <EntitySetMapping Name="Burger">
+      <EntityTypeMapping TypeName="BurgerPlaceModel.Burger">
+        <MappingFragment StoreEntitySet="Burger">
+          <ScalarProperty Name="BurgerPlace" ColumnName="BurgerPlace" />
+          <ScalarProperty Name="id_Customer" ColumnName="id_Customer" />
+          <ScalarProperty Name="id_Orders" ColumnName="id_Orders" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="BurgerPlaceModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerSurname" ColumnName="CustomerSurname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="BurgerPlaceModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Orders_ID" ColumnName="Orders_ID" />
+          <ScalarProperty Name="Orders_Food" ColumnName="Orders_Food" />
+          <ScalarProperty Name="Orders_Drink" ColumnName="Orders_Drink" />
+          <ScalarProperty Name="Orders_Sauce" ColumnName="Orders_Sauce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer_rus">
+      <EntityTypeMapping TypeName="BurgerPlaceModel.Customer_rus">
+        <MappingFragment StoreEntitySet="Customer_rus">
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Имя_клиента" ColumnName="Имя клиента" />
+          <ScalarProperty Name="Фамилия_клиента" ColumnName="Фамилия клиента" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders_rus">
+      <EntityTypeMapping TypeName="BurgerPlaceModel.Orders_rus">
+        <MappingFragment StoreEntitySet="Orders_rus">
+          <ScalarProperty Name="Orders_ID" ColumnName="Orders_ID" />
+          <ScalarProperty Name="Заказанная_еда" ColumnName="Заказанная еда" />
+          <ScalarProperty Name="Заказанный_напиток" ColumnName="Заказанный напиток" />
+          <ScalarProperty Name="Заказанный_соус" ColumnName="Заказанный соус" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
